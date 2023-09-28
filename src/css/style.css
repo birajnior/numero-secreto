@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Fighting spirit';
+  src: url('../fonts/Fighting\ Spirit\ 2.otf') format(opentype);
+}
+@font-face {
+  font-family: 'Mario';
+  src: url(../fonts/MarioLuigi2.ttf) format(truetype);
+}
+@font-face {
+  font-family: 'Top Secret Stamp';
+  src: url(../fonts/Top\ Secret\ Stamp.ttf), format(truetype);
+}
+/*
+Tipos de format()
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+ - truetype-aat (Apple Advanced
+Typography)
+- svg
+*/
+
+:root {
+  --font-principal: 'Top Secret Stamp';
+  --bg-color: #1b1b1b;
+  --color-texto-primario: #aeff00;
+  --color-texto-secundario: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color-texto-primario);
+  font-family: var(--font-principal);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--color-texto-secundario);
+  margin-top: 1.25rem;
+}
+
+.mensagem {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  color: var(--color-texto-secundario);
+}
+
+.box {
+  border: 2px solid var(--color-texto-primario);
+  color: var(--color-texto-primario);
+  display: inline-block;
+  font-size: 4rem;
+  padding: 0.625rem;
+  margin: 1.25rem;
+}
+
+.maior-menor {
+  color: var(--color-texto-primario);
+}
