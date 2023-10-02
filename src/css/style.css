@@ -25,6 +25,7 @@ Typography)
   --bg-color: #1b1b1b;
   --color-texto-primario: #aeff00;
   --color-texto-secundario: #ffffff;
+  --color-texto-hover: #cbff5c;
 }
 
 body {
@@ -36,11 +37,16 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   margin: 0;
 }
 
 h1 {
   font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 h3 {
@@ -66,4 +72,19 @@ h3 {
 
 .maior-menor {
   color: var(--color-texto-primario);
+}
+
+.btn-jogar {
+  padding: 0.5rem 0.938rem;
+  border: 0;
+  background: var(--color-texto-primario);
+  border-radius: 0.313rem;
+  margin-top: 1.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-jogar:hover {
+  background: var(--color-texto-hover);
 }
